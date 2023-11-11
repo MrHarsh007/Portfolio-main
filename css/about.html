@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Outer Div with Two Inner Divs</title>
+<style>
+  .outer-div {
+    display: flex;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8); /* Set outer div background color to black with 50% opacity */
+  }
+
+  .inner-div {
+    flex: 1;
+    padding: 10px;
+    background-color: #000; /* Set inner divs background color to black */
+    color: #fff; /* Set text color to white */
+    border-radius:20px;
+    border:1px solid green;
+    margin-left: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Green shadow */
+  }
+
+  .inner-div:first-child {
+    background-color: #000;
+    flex: 9; /* Adjusting width of the first inner div */
+  }
+
+  .inner-div:last-child {
+    background-color: #000;
+    flex: 1; /* Adjusting width of the second inner div */
+    display: flex;
+    padding: 10px 10px;
+    flex-direction: column; /* Arrange child elements in a column */
+  }
+
+  .vertical-div {
+    /* height: 25%; */
+    background-color: white;
+    text-align: center;
+    width: 80%;
+    padding: 15px;
+    border-radius:10px;
+    margin: 15px auto; /* Add some space between vertical divs */
+    box-sizing: border-box;
+    color: black; /* Set text color to white */
+  }
+</style>
+</head>
+<body>
+  <div class="outer-div">
+    <div class="inner-div">
+      First Inner Div
+    </div>
+    <div class="inner-div" > 
+      <div class="vertical-div">years of experiance 5+</div>
+      <div class="vertical-div">years of experiance 5+</div>
+      <div class="vertical-div">years of experiance 5+</div>
+      <div class="vertical-div">years of experiance 5+</div>
+    </div>
+  </div>
+</body>
+</html>
